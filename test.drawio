@@ -1,17 +1,53 @@
-<mxfile host="app.diagrams.net" modified="2021-10-17T13:45:52.266Z" agent="5.0 (Windows)" etag="xu51NTdlMZHfOGM2Ik9_" version="15.5.4" type="github">
+<mxfile host="app.diagrams.net" modified="2021-10-17T17:56:14.159Z" agent="5.0 (Windows)" etag="zXZK9WfXQ4WkIhXrxnPT" version="15.5.4" type="github">
   <diagram id="x4pHbmTj7K6DYPsnJGb2" name="Page-1">
-    <mxGraphModel dx="1422" dy="752" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="2272" dy="709" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="4NhbtSp77wjc2r_YNsHY-1" value="&lt;div&gt;Bakery Shop&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="dJZv6Eb3j6lY1SrU81eb-1" value="" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="20" y="10" width="200" height="280" as="geometry" />
+        </mxCell>
+        <mxCell id="4NhbtSp77wjc2r_YNsHY-1" value="&lt;div&gt;Pizza shop&lt;br&gt;Sells pizza&lt;br&gt;&lt;/div&gt;&lt;div&gt;Creates orders&lt;br&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="60" y="210" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="4NhbtSp77wjc2r_YNsHY-2" value="Bakery Inventory" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="4NhbtSp77wjc2r_YNsHY-2" value="&lt;div&gt;Pizza Inventory&lt;/div&gt;&lt;div&gt;Stores pizzas&lt;br&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="60" y="120" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="4NhbtSp77wjc2r_YNsHY-3" value="Bakery Producer" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="4NhbtSp77wjc2r_YNsHY-3" value="&lt;div&gt;Pizza Factory&lt;/div&gt;&lt;div&gt;Makes pizza&lt;br&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="60" y="30" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="dJZv6Eb3j6lY1SrU81eb-4" value="&lt;div&gt;Creates demand for pizzas&lt;br&gt;&lt;/div&gt;&lt;div&gt;Decreases inventory&lt;br&gt;&lt;/div&gt;" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="4NhbtSp77wjc2r_YNsHY-1" target="4NhbtSp77wjc2r_YNsHY-2" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="400" y="410" as="sourcePoint" />
+            <mxPoint x="450" y="360" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="240" y="240" />
+              <mxPoint x="240" y="200" />
+              <mxPoint x="240" y="150" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="dJZv6Eb3j6lY1SrU81eb-5" value="&lt;div&gt;Inventory reduction &lt;br&gt;&lt;/div&gt;&lt;div&gt;triggers making&lt;br&gt;&lt;/div&gt;" style="endArrow=classic;html=1;rounded=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="4NhbtSp77wjc2r_YNsHY-2" target="4NhbtSp77wjc2r_YNsHY-3" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="400" y="410" as="sourcePoint" />
+            <mxPoint x="450" y="360" as="targetPoint" />
+            <Array as="points">
+              <mxPoint y="150" />
+              <mxPoint y="60" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="dJZv6Eb3j6lY1SrU81eb-7" value="Add pizza" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="4NhbtSp77wjc2r_YNsHY-3" target="4NhbtSp77wjc2r_YNsHY-2" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="400" y="410" as="sourcePoint" />
+            <mxPoint x="450" y="360" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="dJZv6Eb3j6lY1SrU81eb-8" value="Supply pizza" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" parent="1" source="4NhbtSp77wjc2r_YNsHY-2" target="4NhbtSp77wjc2r_YNsHY-1" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="400" y="410" as="sourcePoint" />
+            <mxPoint x="450" y="360" as="targetPoint" />
+          </mxGeometry>
         </mxCell>
       </root>
     </mxGraphModel>
